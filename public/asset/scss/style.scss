@@ -75,52 +75,24 @@ html {
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: var(--box-shadow);
-  padding: 1.5rem 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-
-  .logo {
-    font-size: 1.5rem; 
-    color: var(--black);
-
-    span {
-      color: var(--yellow);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  
+    .logo {
+      font-size: 2.5rem; // Menetapkan ukuran font langsung di sini
+      color: var(--black);
+  
+      span {
+        color: var(--yellow);
+      }
     }
   }
-
-  .navbar a {
-    font-size: 1.4rem; 
-    color: var(--black);
-    text-transform: capitalize;
-    margin: 0 1rem;
-    transition: color 0.2s linear;
-
-    &:hover {
-      color: var(--yellow);
-    }
-  }
-
-  .icons div {
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    font-size: 2rem; 
-    background: var(--light-bg);
-    color: var(--black);
-    cursor: pointer;
-    text-align: center;
-
-    &:hover {
-      background: var(--black);
-      color: var(--white);
-    }
-    margin-left: .3rem;
-  }
-}
+  
