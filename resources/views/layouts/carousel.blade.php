@@ -1,21 +1,13 @@
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://dfcm824dmlg8u.cloudfront.net/wp-content/uploads/2021/10/0510-COVER-fakta-oto-01-01.jpg" class="d-block w-100" alt="..." style="max-width: 100%;">
+<section class="home" id="home">
+    <div class="home-slider">
+        <div class="w">
+            <section class="slide" style="background: url(asset/img/Montir.jpg) no-repeat;">
+                <div class="content">
+                    <h3>Yamaha semakin di depan</h3>
+                    <p>Kita pilihan terdebest</p>
+                    <a href="#about" class="btn">Mulai Sekarang</a>
+                </div>
+            </section>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://dfcm824dmlg8u.cloudfront.net/wp-content/uploads/2021/10/0510-COVER-fakta-oto-01-01.jpg" class="d-block w-100" alt="..." style="max-width: 100%;">
-    </div>
-    <div class="carousel-item">
-      <img src="https://dfcm824dmlg8u.cloudfront.net/wp-content/uploads/2021/10/0510-COVER-fakta-oto-01-01.jpg" class="d-block w-100" alt="..." style="max-width: 100%;">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+</section>

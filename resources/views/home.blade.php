@@ -17,6 +17,10 @@
     @include('layouts.navbar')
     {{-- End Header --}}
 
+    {{-- Carousel --}}
+    @include('layouts.carousel')
+    {{-- End Carousel --}}
+
     {{-- Javascript --}}
     <script src="asset/js/main.js"></script>
 </body>
