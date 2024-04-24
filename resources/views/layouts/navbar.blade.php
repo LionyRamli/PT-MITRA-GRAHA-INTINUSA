@@ -11,6 +11,5 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="info-btn" class="fas fa-info-circle"></div>
         <div id="search-btn" class="fas fa-search"></div>
-        <div id="info-btn" class="fas fa-info-circle"></div>
     </div>
 </header>
