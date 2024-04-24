@@ -18,7 +18,7 @@
     {{-- End Header --}}
 
     {{-- Carousel --}}
-    @include('layouts.carousel')
+    {{-- @include('layouts.carousel') --}}
     {{-- End Carousel --}}
 
     {{-- Javascript --}}
