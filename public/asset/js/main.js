@@ -30,6 +30,18 @@ window.onscroll = () => {
     contactInfo.classList.remove('active');
 }
 
+$(document).ready(function(){
+    var swiper = new Swiper(".", {
+        loop: true,
+        grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+});
+
+
 // SMOOTH SCROLLING ANIMATION
 const scrollLink = document.querySelectorAll('.scroll-link');
 
@@ -57,3 +69,4 @@ scrollLink.forEach((link) => {
         smoothScroll(link.hash);
     });
 });
+

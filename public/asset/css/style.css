@@ -36,7 +36,7 @@
 @mixin graphText($graphSize) {
   font-size: $graphSize;
   color: var(--light-color);
-  line-height: 1.5;
+  line-height: 2;
 }
 
 @mixin iconsBox() {
@@ -74,7 +74,11 @@ html {
   }
 }
 
-/* .btn {
+section {
+  padding: 5rem 10%;
+}
+
+.btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
@@ -88,7 +92,7 @@ html {
     background: var(--yellow);
     color: var(--black);
   }
-} */
+}
 
 @keyframes fadeIn {
   0% {
@@ -108,6 +112,7 @@ html {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  background: var(--white);
 
   .logo {
     font-size: 1.5rem; 
@@ -268,11 +273,53 @@ html {
 
 
 
-/* h3 {
+h3 {
   @include titleText(2.5rem);
   text-transform: uppercase;
   padding-bottom: 1rem;
-} */
+}
+
+
+.home {
+  padding: 0;
+}
+
+.home .slide {
+  min-height: 60rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.home .slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, var(--white), transparent);
+}
+
+.home .slide .content {
+  width: 50rem;
+  position: relative;
+}
+
+.home .slide .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.home .slide .content p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+
+
 
 
 /* Media Query For Responsive*/
@@ -280,11 +327,18 @@ html {
   .header {
     padding: 1.5rem 2rem;
   }
+  section {
+    padding: 3rem 5%;
+  }
 }
 
 @media(max-width:991px) {
   html {
     font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 2rem;
   }
 
   .header {
@@ -327,3 +381,4 @@ html {
     font-size: 50%;
   }
 }
+
