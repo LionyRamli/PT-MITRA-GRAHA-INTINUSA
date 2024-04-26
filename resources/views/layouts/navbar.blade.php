@@ -27,27 +27,27 @@
     <div class="info">
         <i class="fas fa-phone"></i>
         <h3>Phone Number</h3>
-        <p>123456789</p>
-        <p>123456789</p>
+        <p>08121035085</p>
     </div>
 
     <div class="info">
         <i class="fas fa-envelope"></i>
         <h3>Email Address</h3>
-        <p>bla@gmail.com</p>
-        <p>bla@gmail.com</p>
+        <p>mitragrahaintinusa@gmail.com </p>
     </div>
 
     <div class="info">
         <i class="fas fa-map-marker-alt"></i>
         <h3>Office Address</h3>
-        <p>i dont know</p>
+        <p>Ruko Mutiara Taman Palem Blok C5 No.26
+            Cengkareng Timur - Jakarta Barat 11730
+        </p>
     </div>
 
     <div class="share">
         <a href="" class="fab fa-facebook-f"></a>
         <a href="" class="fab fa-twitter"></a>
-        <a href="" class="fab fa-youtube"></a>
+        <a href="https://www.youtube.com/@cv.mitragrahaindonesia3867" class="fab fa-youtube"></a>
         <a href="" class="fab fa-instagram"></a>
     </div>
 </div>
