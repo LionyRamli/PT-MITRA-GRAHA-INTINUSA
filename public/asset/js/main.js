@@ -1,6 +1,7 @@
 let navbar = document.querySelector('.header .navbar');
 let searchForm = document.querySelector('.header .search-form');
 let contactInfo = document.querySelector('.contact-info');
+let homeSlider = document.querySelector(`.home-slider`);
 
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
@@ -30,16 +31,21 @@ window.onscroll = () => {
     contactInfo.classList.remove('active');
 }
 
-$(document).ready(function(){
-    var swiper = new Swiper(".", {
+document.addEventListener('DOMContentLoaded', function() {
+    var swiper = new Swiper(".home-slider", {
         loop: true,
         grabCursor: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 5000, // delay antara slide (dalam milidetik)
+            disableOnInteraction: false, // untuk mencegah autoplay dihentikan setelah interaksi pengguna
+        },
     });
 });
+
 
 
 // SMOOTH SCROLLING ANIMATION

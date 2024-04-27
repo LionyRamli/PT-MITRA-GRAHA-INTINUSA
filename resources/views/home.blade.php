@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="asset/scss/style.scss">
 
     {{-- Swiper JS --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     {{-- Header --}}
@@ -25,10 +28,8 @@
     {{-- End Carousel --}}
 
     {{-- Javascript --}}
-    <script src="{{ asset('asset/js/main.js') }}"></script>
+    <script src="asset/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.5/swiper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </body>
 </html>

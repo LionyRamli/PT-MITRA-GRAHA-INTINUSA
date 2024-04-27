@@ -4,31 +4,29 @@
 
             <section class="swiper-slide slide" style="background: url(asset/img/Montir.jpg) no-repeat;">
                 <div class="content">
-                    <h3>Yamaha semakin di depan</h3>
-                    <p>Full gaspol</p>
+                    <h3>Yamaha Semakin di depan</h3>
+                    <p>Full Gaspol</p>
                     <a href="#about" class="btn">Mulai Sekarang</a>
                 </div>
             </section>
 
-            <section class="swiper-slide slide" style="background: url(asset/img/foto1.jpeg) no-repeat;">
+            <section class="swiper-slide slide" style="background: url(asset/img/Montir.jpg) no-repeat;">
                 <div class="content">
-                    <h3>Yamaha semakin di depan</h3>
-                    <p>Full gaspol</p>
+                    <h3>Yamaha Semakin di depan</h3>
+                    <p>Full Gaspol</p>
                     <a href="#about" class="btn">Mulai Sekarang</a>
                 </div>
             </section>
 
-            <section class="swiper-slide slide" style="background: url(asset/img/foto2.jpeg) no-repeat;">
+            <section class="swiper-slide slide" style="background: url(asset/img/Montir.jpg) no-repeat;">
                 <div class="content">
-                    <h3>Yamaha semakin di depan</h3>
-                    <p>Full gaspol</p>
+                    <h3>Yamaha Semakin di depan</h3>
+                    <p>Full Gaspol</p>
                     <a href="#about" class="btn">Mulai Sekarang</a>
                 </div>
             </section>
         </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        
+        {{-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> --}}
     </div>
 </section>
