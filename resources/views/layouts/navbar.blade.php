@@ -1,24 +1,53 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('asset/img/FDX-remove.png') }}" alt="Logo FDX" width="80" height="40" class="d-inline-block align-text-top mr-2">
-            <img src="{{ asset('asset/img/YAMADALUBE.jpg') }}" alt="Logo YAMADALUBE" width="150" height="30" class="d-inline-block align-text-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active text-white fs-6 mx-5" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-2 text-white fs-6 mx-5" href="#">Produk</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white fs-6 mx-5" href="#">Kontak</a>
-                </li>
-            </ul>            
-        </div>
+<header class="header">
+    <a href="#" class="logo">PT <span>MITRA GRAHA INTINUSA</span></a>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        <div id="search-btn" class="fas fa-search"></div>
     </div>
-</nav>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="Cari disini..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    
+</header>
+
+<div class="contact-info">
+
+    <div id="close-contact-info" class="fas fa-times"></div>
+
+    <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>Phone Number</h3>
+        <p>08121035085</p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>Email Address</h3>
+        <p>mitragrahaintinusa@gmail.com </p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Office Address</h3>
+        <p>Ruko Mutiara Taman Palem Blok C5 No.26
+            Cengkareng Timur - Jakarta Barat 11730
+        </p>
+    </div>
+
+    <div class="share">
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="https://www.youtube.com/@cv.mitragrahaindonesia3867" class="fab fa-youtube"></a>
+        <a href="" class="fab fa-instagram"></a>
+    </div>
+</div>
