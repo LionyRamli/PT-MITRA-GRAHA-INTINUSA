@@ -3,7 +3,7 @@
 
     <nav class="navbar">
         <a href="#">Home</a>
-        <a href="#">Product</a>
+        <a href="{{route('product')}}">Product</a>
         <a href="#">Kontak</a>
     </nav>
 

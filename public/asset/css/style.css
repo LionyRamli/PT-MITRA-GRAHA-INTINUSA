@@ -367,7 +367,11 @@ h3 {
   }
 }
 
-
+.katalog{
+  .row .col{
+    font-size: 30px;
+  }
+}
 
 
 
@@ -444,3 +448,6 @@ h3 {
   }
 }
 
+a {
+  text-decoration: none;
+}
