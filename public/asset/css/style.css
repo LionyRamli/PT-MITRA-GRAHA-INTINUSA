@@ -374,6 +374,18 @@ h3 {
       width: 90%;
     }
   }
+
+  .home .slide {
+    justify-content: center;
+
+    .content{
+      text-align: center;
+
+      h3{
+        font-size: 3rem;
+      }
+    }
+  }
 }
 
 @media(max-width:450px) {
