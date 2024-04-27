@@ -7,7 +7,7 @@
     <div class="swiper home-slider">
         <div class="swiper-wrapper">
 
-            <section class="swiper-slide slide" style="background: url(asset/img/Katalog1.png) no-repeat;">
+            <section class="swiper-slide slide" style="background: url(asset/img/Montir.jpg) no-repeat;">
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
                     <p>Full Gaspol</p>
@@ -15,7 +15,7 @@
                 </div>
             </section>
 
-            <section class="swiper-slide slide" style="background: url(asset/img/Katalog2.png) no-repeat;">
+            <section class="swiper-slide slide" style="background: url(asset/img/Montir.jpg) no-repeat;">
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
                     <p>Full Gaspol</p>
@@ -23,7 +23,7 @@
                 </div>
             </section>
 
-            <section class="swiper-slide slide" style="background: url(asset/img/Katalog3.png) no-repeat;">
+            <section class="swiper-slide slide" style="background: url(asset/img/Montir.jpg) no-repeat;">
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
                     <p>Full Gaspol</p>
@@ -31,7 +31,7 @@
                 </div>
             </section>
 
-            <section class="swiper-slide slide" style="background: url(asset/img/Katalog4.png) no-repeat;">
+            <section class="swiper-slide slide" style="background: url(asset/img/Montir.jpg) no-repeat;">
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
                     <p>Full Gaspol</p>
