@@ -103,6 +103,8 @@ section {
   }
 }
 
+
+
 @keyframes fadeIn {
   0% {
     top: 50%;
@@ -326,6 +328,45 @@ h3 {
   font-size: 1.4rem;
   padding: 1rem 0;
 }
+
+.about {
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 45px;
+
+    .photo {
+      flex: 1 1 30%; /* Mengatur lebar foto menjadi 30% dari lebar container */
+      max-width: 50rem; /* Tetapkan lebar maksimum agar foto tidak terlalu melebar */
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto; /* Mengatur tinggi foto agar proporsional */
+      display: block; /* Menghilangkan margin bawah pada gambar */
+    }
+
+    .content {
+      flex: 1 1 41rem;
+    }
+
+    .content h3 {
+      font-size: 3.5rem; /* Ukuran font untuk judul */
+      /* Gaya tambahan untuk judul */
+    }
+
+    .content p {
+      font-size: 1.5rem;
+      padding: 1rem 0; /* Ukuran font untuk paragraf */
+      line-height: 1.54;
+      text-align: justify; /* Menambahkan line height pada paragraf */
+      /* Gaya tambahan untuk paragraf */
+    }
+  }
+}
+
 
 
 
