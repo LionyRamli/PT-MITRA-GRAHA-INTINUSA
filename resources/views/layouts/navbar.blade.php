@@ -2,9 +2,9 @@
     <a href="#" class="logo">PT <span>MITRA GRAHA INTINUSA</span></a>
 
     <nav class="navbar">
-        <a href="{{ route('home') }}">Home</a>
-        <a href="{{ route('product') }}">Product</a>
-        <a href="#">Kontak</a>
+        <a href="{{ route('home') }}" onclick="loadPage('{{ route('home') }}', 'content')">Home</a>
+        <a href="{{ route('product') }}" onclick="loadPage('{{ route('product') }}', 'content')">Product</a>
+        <a href="#" >Kontak</a>
     </nav>
 
     <div class="icons">

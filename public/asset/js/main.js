@@ -49,9 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Biar ga keload ulang 
 
-// File: main.js
-
-// main.js
 
 function loadPage(url, targetId) {
     var xhttp = new XMLHttpRequest(); // Buat objek XMLHttpRequest
