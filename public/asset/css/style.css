@@ -89,7 +89,7 @@ section {
 
 .btn {
   display: inline-block;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding: 1rem 3rem;
   background: var(--black);
   color: var(--white);
@@ -103,6 +103,9 @@ section {
   }
 }
 
+h3 {
+  font-weight: bold;
+}
 
 
 @keyframes fadeIn {
@@ -358,9 +361,9 @@ h3 {
     }
 
     .content p {
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       padding: 1rem 0; /* Ukuran font untuk paragraf */
-      line-height: 1.54;
+      line-height: 1.5;
       text-align: justify; /* Menambahkan line height pada paragraf */
       /* Gaya tambahan untuk paragraf */
     }

@@ -47,6 +47,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Biar ga keload ulang 
+
+// File: main.js
+
+// main.js
+
+function loadPage(url, targetId) {
+    var xhttp = new XMLHttpRequest(); // Buat objek XMLHttpRequest
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById(targetId).innerHTML = this.responseText; // Perbarui konten dengan respons dari server
+        }
+    };
+    xhttp.open("GET", url, true); // Buat permintaan GET ke URL
+    xhttp.send(); // Kirim permintaan
+}
+
+
 
 // SMOOTH SCROLLING ANIMATION
 const scrollLink = document.querySelectorAll('.scroll-link');

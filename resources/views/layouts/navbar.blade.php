@@ -2,8 +2,8 @@
     <a href="#" class="logo">PT <span>MITRA GRAHA INTINUSA</span></a>
 
     <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="{{route('product')}}">Product</a>
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('product') }}">Product</a>
         <a href="#">Kontak</a>
     </nav>
 
@@ -21,24 +21,23 @@
 </header>
 
 <div class="contact-info">
-
     <div id="close-contact-info" class="fas fa-times"></div>
 
     <div class="info">
         <i class="fas fa-phone"></i>
-        <h3>Phone Number</h3>
+        <h3 class="fw-bold">Phone Number</h3>
         <p>08121035085</p>
     </div>
 
     <div class="info">
         <i class="fas fa-envelope"></i>
-        <h3>Email Address</h3>
-        <p>mitragrahaintinusa@gmail.com </p>
+        <h3 class="fw-bold">Email Address</h3>
+        <p>mitragrahaintinusa@gmail.com</p>
     </div>
 
     <div class="info">
         <i class="fas fa-map-marker-alt"></i>
-        <h3>Office Address</h3>
+        <h3 class="fw-bold">Office Address</h3>
         <p>Ruko Mutiara Taman Palem Blok C5 No.26
             Cengkareng Timur - Jakarta Barat 11730
         </p>
