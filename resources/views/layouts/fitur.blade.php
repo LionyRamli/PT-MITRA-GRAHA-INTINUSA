@@ -18,5 +18,10 @@
           <h3 class="menu-card-title">Professional Service</h3>
           <p class="menu-card-price">Dijamin Gacor Punya</p>
         </div>
+        <div class="menu-card">
+            <img src="asset/img/1.jpg" alt="" class="menu-card-img">
+            <h3 class="menu-card-title">Professional Service</h3>
+            <p class="menu-card-price">Dijamin Gacor Punya</p>
+          </div>
       </div>
 </section>

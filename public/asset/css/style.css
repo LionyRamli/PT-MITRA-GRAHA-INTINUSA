@@ -475,6 +475,10 @@ h3 {
     }
   }
 
+  .fitur .row .menu-card img {
+    margin-top: 2rem;
+}
+
   .home .slide {
     justify-content: center;
 
