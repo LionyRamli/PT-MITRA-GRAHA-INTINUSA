@@ -384,6 +384,7 @@ h3 {
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .fitur span {
@@ -451,6 +452,51 @@ h3 {
   /* tambahkan properti lain yang diperlukan */
 }
 
+.produk {
+  padding: 1.4rem 7%;
+}
+
+.produk h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.produk span {
+  color: var(--yellow);
+}
+
+.produk p {
+  text-align: center;
+  max-width: 100rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+.produk .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.produk .row .menu-card {
+  text-align: center;
+  flex: 1 0 20%; /* Menentukan flex-grow, flex-shrink, dan flex-basis */
+  margin: 0 1rem; /* Atur margin antar menu-card */
+}
+
+.produk .row .menu-card img {
+  border-radius: 50%;
+  width: 60%; /* Mengisi lebar gambar */
+}
+
+.produk .row .menu-card .menu-card-title {
+  margin-top: 1.5rem auto 0.5rem;
+}
 
 /* Media Query For Responsive*/
 @media(max-width:1200px) {
