@@ -25,7 +25,7 @@
         </div>
 
         <div class="photo">
-            <img src="asset/img/Montir.jpg" alt="Your Photo">
+            <img src="asset/img/andy.jpeg" alt="Your Photo">
         </div>
     </div>
 </section>
