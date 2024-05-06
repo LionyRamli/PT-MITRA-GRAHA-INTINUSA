@@ -17,6 +17,7 @@
 
     <div class="row">
         <div class="content">
+            <h3 class="fw-bold">YAMADA</h3>
             <p style="line-height: 1.6;">
                 Teknologi Jepang menjadi fondasi utama dalam pembuatan PDX, menambahkan kehandalan dan keunggulan teknis yang menjadi ciri khas produk ini. Dengan memanfaatkan inovasi terkini dari Jepang, PDX mampu melampaui harapan konsumen dalam hal kinerja dan daya tahan. Setiap komponen PDX dirancang dan diproduksi dengan standar tertinggi, menjadikannya pilihan yang diandalkan bagi mereka yang menginginkan mesin yang tangguh dan andal. Kombinasi antara kecanggihan teknologi Jepang dan komitmen untuk kepuasan pelanggan membuat PDX menjadi pilihan utama dalam industri ini.
             </p>
