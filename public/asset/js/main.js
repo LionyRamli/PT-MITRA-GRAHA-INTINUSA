@@ -48,8 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Biar ga keload ulang 
-
-
 function loadPage(url, targetId) {
     var xhttp = new XMLHttpRequest(); // Buat objek XMLHttpRequest
     xhttp.onreadystatechange = function() {
@@ -65,7 +63,6 @@ function loadPage(url, targetId) {
 
 // SMOOTH SCROLLING ANIMATION
 const scrollLink = document.querySelectorAll('.scroll-link');
-
 function smoothScroll(target) {
     target = document.querySelector(target);
     const targetPosition = target.getBoundingClientRect().top;

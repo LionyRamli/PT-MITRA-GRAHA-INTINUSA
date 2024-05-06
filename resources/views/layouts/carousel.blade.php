@@ -11,7 +11,7 @@
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
                     <p>Full Gaspol</p>
-                    <a href="#about" class="btn mt-3">Mulai Sekarang</a>
+                    <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
 
@@ -19,7 +19,7 @@
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
                     <p>Full Gaspol</p>
-                    <a href="#about" class="btn mt-3">Mulai Sekarang</a>
+                    <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
 
@@ -27,7 +27,7 @@
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
                     <p>Full Gaspol</p>
-                    <a href="#about" class="btn mt-3">Mulai Sekarang</a>
+                    <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
 
@@ -35,7 +35,7 @@
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
                     <p>Full Gaspol</p>
-                    <a href="#about" class="btn mt-3">Mulai Sekarang</a>
+                    <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
         </div>

@@ -421,6 +421,36 @@ h3 {
   margin-top: 1.5rem auto 0.5rem;
 }
 
+.video .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.video .row .videoo {
+  flex: 1 1 41rem;
+}
+
+.video .row .videoo video {
+  width: 100%;
+}
+
+.video .row .konten {
+  flex: 1 1 41rem;
+}
+
+.video .row .konten h3 {
+  font-size: 3rem;
+  /* tambahkan properti lain yang diperlukan */
+}
+
+.video .row .konten p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  /* tambahkan properti lain yang diperlukan */
+}
+
 
 /* Media Query For Responsive*/
 @media(max-width:1200px) {
