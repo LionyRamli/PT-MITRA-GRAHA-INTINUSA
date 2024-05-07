@@ -32,6 +32,10 @@
     @include('layouts.katalog')
     {{-- End About --}}
 
+    {{-- Footert --}}
+    @include('layouts.footer')
+    {{-- End Footer --}}
+    
     {{-- Javascript --}}
     <script src="asset/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

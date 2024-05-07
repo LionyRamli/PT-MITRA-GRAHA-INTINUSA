@@ -42,9 +42,9 @@
     @include('layouts.produk')
     {{-- End Product --}}
 
-    {{-- Product --}}
+    {{-- Footert --}}
     @include('layouts.footer')
-    {{-- End Product --}}
+    {{-- End Footer --}}
 
     {{-- Bootstrap Bundle with Popper for Bootstrap JavaScript --}}
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

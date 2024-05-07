@@ -1,7 +1,7 @@
 
 <section class="footer">
         <div class="footer-content">
-            <a href="#" class="logo">TZU CHI <span>CORP</span></a>
+            <a href="#" class="logo">PT MITRA GRAHA <span>INTINUSA</span></a>
             <p>Terimakasih atas support dari kalian semoga<br>
                 konten saya bisa bermanfaat buat kalian.</p>
             <div class="icon">
@@ -16,8 +16,8 @@
             <h4>Company</h4>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Best Sellers</a></li>
         </div>
 
         <div class="footer-content">
