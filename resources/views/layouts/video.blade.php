@@ -7,9 +7,9 @@
        </div>
 
        <div class="konten">
-        <h3>We will provide you the best work which you dream for!</h3>
+        <h3>Meningkatkan Performa Kendaraan Anda dengan Kualitas Oli Terbaik</h3>
         <p>Setiap proses yang dilakukan selalu diperhatikan dan hati-hati. Kami juga selalu menjaga kebersihan pabrik untuk kebersihan oli yang akan dijual, itu semua demi kesehatan mesin yang akan digunakan oleh konsumen.</p>
-        <a href="#" class="btn">Read More</a>
+        <a href="https://www.youtube.com/@cv.mitragrahaindonesia3867" class="btn">Watch Other</a>
     </div>
     </div>
 </section>

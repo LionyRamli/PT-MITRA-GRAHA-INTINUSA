@@ -9,8 +9,7 @@
 
             <section class="swiper-slide slide" style="background: url(asset/img/Katalog11.png) no-repeat;">
                 <div class="content">
-                    <h3>Yamaha Semakin di depan</h3>
-                    <p>Full Gaspol</p>
+                    <h3>PELUMAS MOTOR HANDAL</h3>
                     <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
@@ -18,7 +17,6 @@
             <section class="swiper-slide slide" style="background: url(asset/img/Katalog22.png) no-repeat;">
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
-                    <p>Full Gaspol</p>
                     <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
@@ -26,7 +24,6 @@
             <section class="swiper-slide slide" style="background: url(asset/img/Katalog33.png) no-repeat;">
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
-                    <p>Full Gaspol</p>
                     <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
@@ -34,7 +31,6 @@
             <section class="swiper-slide slide" style="background: url(asset/img/Katalog44.png) no-repeat;">
                 <div class="content">
                     <h3>Yamaha Semakin di depan</h3>
-                    <p>Full Gaspol</p>
                     <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>

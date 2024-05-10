@@ -23,7 +23,7 @@
 }
 
 body {
-  min-height: 3000px;
+  /* min-height: 3000px; */
 }
 
 @mixin grid($val) {
@@ -83,6 +83,7 @@ section {
   padding: 5rem 10%;
 }
 
+/* Frame 1 */
 .heading {
   margin-bottom: 3rem;
   font-size: 3rem;
@@ -304,7 +305,7 @@ h3 {
 }
 
 .home .slide {
-  min-height: 60rem;
+  min-height: 68rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -494,8 +495,9 @@ h3 {
   margin: 0 1rem; /* Atur margin antar menu-card */
 }
 
+
 .produk .row .menu-card img {
-  border-radius: 50%;
+  border-radius: 0%;
   width: 60%; /* Mengisi lebar gambar */
 }
 
@@ -522,6 +524,7 @@ h3 {
 span {
   color: white;
 }
+
 
 .footer-content h4 {
   color: white;
@@ -565,6 +568,10 @@ span {
   color: white;
   transform: translateY(-5px);
 }
+
+
+/* Frame 2 */
+
 
 /* Media Query For Responsive*/
 @media(max-width:1200px) {
@@ -623,6 +630,16 @@ span {
     margin-top: 2rem;
 }
 
+.fitur .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-card {
+  margin-top: 2rem; /* Atur margin atas antar menu-card */
+}
+
   .home .slide {
     justify-content: center;
 
@@ -633,6 +650,30 @@ span {
         font-size: 3rem;
       }
     }
+  }
+
+  .konten {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .katalog .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .katalog .col-sm-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .katalog .card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 }
 
