@@ -32,6 +32,10 @@
     @include('layouts.katalog')
     {{-- End About --}}
 
+    {{-- Products --}}
+    @include('layouts.product');
+    {{-- End Products --}}
+
     {{-- Footert --}}
     @include('layouts.footer')
     {{-- End Footer --}}

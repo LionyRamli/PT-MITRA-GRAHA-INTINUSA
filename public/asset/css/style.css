@@ -376,11 +376,6 @@ h3 {
   }
 }
 
-.katalog{
-  .row .col{
-    font-size: 30px;
-  }
-}
 
 .fitur {
   padding: 1.4rem 7%;
@@ -509,7 +504,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 3.5rem;
-  background: #233a81;
+  background: #FFA07A;
   left: 0;
   right: 0;
   bottom: 0;
@@ -527,7 +522,7 @@ span {
 
 
 .footer-content h4 {
-  color: white;
+  color: var(--white);
   margin-bottom: 1.5rem;
   font-size: 20px;
 }
@@ -538,7 +533,7 @@ span {
 
 .footer-content li a {
   display: block;
-  color: #d6d6d6;
+  color: var(--white);
   font-size: 15px;
   font-weight: 400;
   transition: all .40s ease;
@@ -546,11 +541,12 @@ span {
 
 .footer-content li a:hover {
   transform: translateY(-3px) translateX(-5px);
-  color: white;
+  color: white; /* Hover color set to white */
 }
 
+
 .footer-content p {
-  color: #d6d6d6;
+  color: var(--white);
   font: 16px;
   line-height: 30px;
   margin: 20px 0;
@@ -572,6 +568,114 @@ span {
 
 /* Frame 2 */
 
+.katalog {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.katalog h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.katalog span {
+  color: var(--yellow);
+}
+
+.katalog .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.katalog .col-sm-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  flex: 0 0 25%; /* Ensure the columns take up 25% of the row */
+  max-width: 25%; /* Ensure the columns take up 25% of the row */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.katalog .card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to keep image within the card */
+}
+
+.katalog .card img {
+  max-width: 100%;
+  max-height: 15rem; /* Set a maximum height for medium size */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.product {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.product h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.product span {
+  color: var(--yellow);
+}
+
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.product .col-sm-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  flex: 0 0 25%; /* Ensure the columns take up 25% of the row */
+  max-width: 25%; /* Ensure the columns take up 25% of the row */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.product .card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to keep image within the card */
+}
+
+.product .card img {
+  max-width: 100%;
+  max-height: 15rem; /* Set a maximum height for medium size */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+}
 
 /* Media Query For Responsive*/
 @media(max-width:1200px) {
