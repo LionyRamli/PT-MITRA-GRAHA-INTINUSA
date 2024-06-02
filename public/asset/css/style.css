@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --yellow:#f5bf23;
+  --black:#111;
+  --white:#fff;
+  --light-color:#666;
+  --light-bg:#eee;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --border:.1rem solid rgba(0,0,0,.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+  list-style: none;
+}
+
+body {
+  /* min-height: 3000px; */
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+@mixin graphText($graphSize) {
+  font-size: $graphSize;
+  color: var(--light-color);
+  line-height: 2;
+}
+
+@mixin iconsBox() {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: var(--light-bg);
+  color: var(--black);
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+  }
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+/* Frame 1 */
+.heading {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bold;
+  padding-left: 1rem;
+  border-left: 1rem solid var(--yellow);
+}
+
+.btn {
+  display: inline-block;
+  /* margin-top: 1rem; */
+  padding: 1rem 3rem;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+
+  &:hover{
+    background: var(--yellow);
+    color: var(--black);
+  }
+}
+
+h3 {
+  font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background: var(--white);
+
+  .logo {
+    font-size: 1.5rem; 
+    color: var(--black);
+
+    span {
+      color: var(--yellow);
+    }
+  }
+
+  .navbar a {
+    font-size: 1.4rem; 
+    color: var(--black);
+    text-transform: capitalize;
+    margin: 0 1rem;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+
+  .icons div {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2rem; 
+    background: var(--light-bg);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+      background: var(--black);
+      color: var(--white);
+    }
+    margin-left: .3rem;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  .search-form {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70rem;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn .2s linear;
+
+    &.active{
+      display: flex;
+    }
+
+    input {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      background: var(--light-bg);
+      font-size: 1.6rem;
+      color: var(--light-color);
+    }
+
+    label{
+      font-size: 2.5rem;
+      color: var(--black);
+      cursor: pointer;
+      margin: 0 1rem;
+    }
+  }
+
+  /* .btn {
+    width: 100%;
+  }
+
+  p{
+    @include graphText(1.5rem);
+    padding-top: 1rem;
+
+    a{
+      color: var(--yellow);
+    }
+  } */
+}
+
+.contact-info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35rem;
+  background: var(--white);
+  /* box-shadow: 0 0 0 100vw rgba(0, 0, 0, .7); */
+  height: 100%;
+  text-align: center;
+  z-index: 1100;
+  padding: 0 2rem;
+  padding-top: 5rem;
+  display: none;
+}
+
+.contact-info.active {
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, .7);
+  display: block;
+}
+
+#close-contact-info {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: 4rem;
+  color: var(--black);
+}
+
+#close-contact-info:hover {
+  transform: rotate(90deg);
+}
+
+.info {
+  padding: 2rem 0;
+}
+
+.info i {
+  /* Styles for icon */
+  margin-bottom: .5rem;
+  font-size: 2.5rem; /* Increased icon size */
+}
+
+.info h3 {
+  /* Styles for heading */
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.info p {
+  /* Styles for paragraph */
+  font-size: 1.5rem;
+}
+
+.share {
+  padding-top: 2rem;
+  border-top: var(--border);
+  margin-top: 1rem;
+}
+
+.share a {
+  /* Styles for share links */
+  /* Include icon styles here */
+  margin-right: 1rem; /* Add spacing between icons */
+  font-size: 2.5rem; /* Increased icon size */
+}
+
+
+
+h3 {
+  @include titleText(2.5rem);
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+
+.home {
+  padding: 0;
+}
+
+.home .slide {
+  min-height: 68rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.home .slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, var(--white), transparent);
+}
+
+.home .slide .content {
+  width: 50rem;
+  position: relative;
+}
+
+.home .slide .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.home .slide .content p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.about {
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 45px;
+
+    .photo {
+      flex: 1 1 30%; /* Mengatur lebar foto menjadi 30% dari lebar container */
+      max-width: 50rem; /* Tetapkan lebar maksimum agar foto tidak terlalu melebar */
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto; /* Mengatur tinggi foto agar proporsional */
+      display: block; /* Menghilangkan margin bawah pada gambar */
+    }
+
+    .content {
+      flex: 1 1 41rem;
+    }
+
+    .content h3 {
+      font-size: 3.5rem; /* Ukuran font untuk judul */
+      /* Gaya tambahan untuk judul */
+    }
+
+    .content p {
+      font-size: 1.45rem;
+      padding: 1rem 0; /* Ukuran font untuk paragraf */
+      line-height: 1.5;
+      text-align: justify; /* Menambahkan line height pada paragraf */
+      /* Gaya tambahan untuk paragraf */
+    }
+  }
+}
+
+
+.fitur {
+  padding: 1.4rem 7%;
+}
+
+.fitur h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.fitur span {
+  color: var(--yellow);
+}
+
+.fitur p {
+  text-align: center;
+  max-width: 100rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+.fitur .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.fitur .row .menu-card {
+  text-align: center;
+  flex: 1 0 20%; /* Menentukan flex-grow, flex-shrink, dan flex-basis */
+  margin: 0 1rem; /* Atur margin antar menu-card */
+}
+
+.fitur .row .menu-card img {
+  border-radius: 50%;
+  width: 60%; /* Mengisi lebar gambar */
+}
+
+.fitur .row .menu-card .menu-card-title {
+  margin-top: 1.5rem auto 0.5rem;
+}
+
+.video .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.video .row .videoo {
+  flex: 1 1 41rem;
+}
+
+.video .row .videoo video {
+  width: 100%;
+}
+
+.video .row .konten {
+  flex: 1 1 41rem;
+}
+
+.video .row .konten h3 {
+  font-size: 3rem;
+  /* tambahkan properti lain yang diperlukan */
+}
+
+.video .row .konten p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  /* tambahkan properti lain yang diperlukan */
+}
+
+.produk {
+  padding: 1.4rem 7%;
+}
+
+.produk h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.produk span {
+  color: var(--yellow);
+}
+
+.produk p {
+  text-align: center;
+  max-width: 100rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+.produk .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.produk .row .menu-card {
+  text-align: center;
+  flex: 1 0 20%; /* Menentukan flex-grow, flex-shrink, dan flex-basis */
+  margin: 0 1rem; /* Atur margin antar menu-card */
+}
+
+
+.produk .row .menu-card img {
+  border-radius: 0%;
+  width: 60%; /* Mengisi lebar gambar */
+}
+
+.produk .row .menu-card .menu-card-title {
+  margin-top: 1.5rem auto 0.5rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 3.5rem;
+  /* background: #FFA07A; */
+  background: var(--yellow);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo {
+  font-size: 33px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+span {
+  color: white;
+}
+
+
+.footer-content h4 {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+
+.footer-content li {
+  margin-bottom: 16px;
+}
+
+.footer-content li a {
+  display: block;
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 400;
+  transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+  transform: translateY(-3px) translateX(-5px);
+  color: white; /* Hover color set to white */
+}
+
+
+.footer-content p {
+  color: var(--white);
+  font: 16px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.icon a {
+  display: inline-block;
+  font-size: 25px;
+  color: #d6d6d6;
+  margin-right: 20px;
+  transition: all .40s ease;
+}
+
+.icon a:hover {
+  color: white;
+  transform: translateY(-5px);
+}
+
+
+/* Frame 2 */
+
+.katalog {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.katalog h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.katalog span {
+  color: var(--yellow);
+}
+
+.katalog .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.katalog .col-sm-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  flex: 0 0 25%; /* Ensure the columns take up 25% of the row */
+  max-width: 25%; /* Ensure the columns take up 25% of the row */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.katalog .card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to keep image within the card */
+}
+
+.katalog .card img {
+  max-width: 100%;
+  max-height: 15rem; /* Set a maximum height for medium size */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.product {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.product h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.product span {
+  color: var(--yellow);
+}
+
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.product .col-sm-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  flex: 0 0 25%; /* Ensure the columns take up 25% of the row */
+  max-width: 25%; /* Ensure the columns take up 25% of the row */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.product .card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to keep image within the card */
+}
+
+.product .card img {
+  max-width: 100%;
+  max-height: 15rem; /* Set a maximum height for medium size */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+}
+
+/* Frame 3 */
+.service .container {
+  text-align: center;
+}
+
+.service .container h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.service .container p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.service .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Adjust spacing between boxes as needed */
+}
+
+.service .col-4 {
+  flex: 1;
+  min-width: 200px; /* Adjust the minimum width as needed */
+  text-align: center; /* Center text inside each box */
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* Media Query For Responsive*/
+@media(max-width:1200px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media(max-width:991px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  .header {
+    #menu-btn {
+      display: inline-block;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      a{
+        display: block;
+        margin: 2rem;
+      }
+    }
+  }
+}
+
+@media(max-width:768px){
+  .header{
+    .search-form{
+      width: 90%;
+    }
+  }
+
+  .fitur .row .menu-card img {
+    margin-top: 2rem;
+}
+
+.fitur .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-card {
+  margin-top: 2rem; /* Atur margin atas antar menu-card */
+}
+
+  .home .slide {
+    justify-content: center;
+
+    .content{
+      text-align: center;
+
+      h3{
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .konten {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .katalog .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .katalog .col-sm-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .katalog .card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .service .box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.service .col-4 {
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.service iframe {
+    max-width: 100%;
+    width: 100%;
+    min-height: 300px; /* Ubah nilai sesuai kebutuhan */
+    height: auto;
+    border: none; /* Opsional, untuk menghapus border iframe */
+}
+
+}
+
+@media(max-width:450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
