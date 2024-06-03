@@ -504,7 +504,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 3.5rem;
+<<<<<<< HEAD
   background: #FFA07A;
+=======
+  /* background: #FFA07A; */
+  background: var(--yellow);
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
   left: 0;
   right: 0;
   bottom: 0;
@@ -677,6 +682,46 @@ span {
 
 }
 
+<<<<<<< HEAD
+=======
+/* Frame 3 */
+.service .container {
+  text-align: center;
+}
+
+.service .container h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.service .container p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.service .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Adjust spacing between boxes as needed */
+}
+
+.service .col-4 {
+  flex: 1;
+  min-width: 200px; /* Adjust the minimum width as needed */
+  text-align: center; /* Center text inside each box */
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
 /* Media Query For Responsive*/
 @media(max-width:1200px) {
   .header {
@@ -779,6 +824,29 @@ span {
     max-width: 100%;
     margin-bottom: 30px;
   }
+<<<<<<< HEAD
+=======
+
+  .service .box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.service .col-4 {
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.service iframe {
+    max-width: 100%;
+    width: 100%;
+    min-height: 300px; /* Ubah nilai sesuai kebutuhan */
+    height: auto;
+    border: none; /* Opsional, untuk menghapus border iframe */
+}
+
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
 }
 
 @media(max-width:450px) {

@@ -24,3 +24,10 @@ Route::get('/home', function () {
 Route::get('/product', function () {
     return view('product');
 })->name('product');
+<<<<<<< HEAD
+=======
+
+Route::get('/kontak', function () {
+    return view('kontak');
+})->name('kontak');
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d

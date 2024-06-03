@@ -62,7 +62,11 @@ function loadPage(url, targetId) {
 
 
 // SMOOTH SCROLLING ANIMATION
+<<<<<<< HEAD
 const scrollLink = document.querySelectorAll('.scroll-link');
+=======
+const scrollLink = document.querySelectorAll('.scroll-link');2
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
 function smoothScroll(target) {
     target = document.querySelector(target);
     const targetPosition = target.getBoundingClientRect().top;

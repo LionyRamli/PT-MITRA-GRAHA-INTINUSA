@@ -1,5 +1,9 @@
 <section class="fitur" id="fitur">
+<<<<<<< HEAD
     <h2>Why Choose <span>PDX</span> and <span>Yamada</span></h2>
+=======
+    <h2>Mengapa <span>PDX</span> and <span>Yamada</span></h2>
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
     <p>PDX menggunakan bahan-bahan berkualitas tinggi dan menggunakan wadah yang terjamin aman untuk oli. PDX juga selalu menerima saran dan merespon segala kekhawatiran konsumen, dan selalu mengevaluasi kinerja karyawan untuk memajukan produk.</p>
 
     <div class="row">

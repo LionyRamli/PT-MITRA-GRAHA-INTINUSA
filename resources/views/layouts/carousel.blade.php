@@ -16,21 +16,33 @@
 
             <section class="swiper-slide slide" style="background: url(asset/img/Katalog22.png) no-repeat;">
                 <div class="content">
+<<<<<<< HEAD
                     <h3>Yamaha Semakin di depan</h3>
+=======
+                    <h3>PELUMAS MOTOR HANDAL</h3>
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
                     <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
 
             <section class="swiper-slide slide" style="background: url(asset/img/Katalog33.png) no-repeat;">
                 <div class="content">
+<<<<<<< HEAD
                     <h3>Yamaha Semakin di depan</h3>
+=======
+                    <h3>PELUMAS MOTOR HANDAL</h3>
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
                     <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>
 
             <section class="swiper-slide slide" style="background: url(asset/img/Katalog44.png) no-repeat;">
                 <div class="content">
+<<<<<<< HEAD
                     <h3>Yamaha Semakin di depan</h3>
+=======
+                    <h3>PELUMAS MOTOR HANDAL</h3>
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
                     <a href="#about" class="btn mt-3 scroll-link">Mulai Sekarang</a>
                 </div>
             </section>

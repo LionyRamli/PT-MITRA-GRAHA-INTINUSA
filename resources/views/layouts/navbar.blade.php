@@ -4,7 +4,11 @@
     <nav class="navbar">
         <a href="{{ route('home') }}" onclick="loadPage('{{ route('home') }}', 'content')">Home</a>
         <a href="{{ route('product') }}" onclick="loadPage('{{ route('product') }}', 'content')">Product</a>
+<<<<<<< HEAD
         <a href="#" >Kontak</a>
+=======
+        <a href="{{ route('kontak') }}" onclick="loadPage('{{ route('kontak') }}', 'content')" >Kontak</a>
+>>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
     </nav>
 
     <div class="icons">
