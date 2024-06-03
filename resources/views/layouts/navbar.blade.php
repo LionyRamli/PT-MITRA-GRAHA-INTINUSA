@@ -8,7 +8,6 @@
         <a href="#" >Kontak</a>
 =======
         <a href="{{ route('kontak') }}" onclick="loadPage('{{ route('kontak') }}', 'content')" >Kontak</a>
->>>>>>> 355c8ac6b97576ef2f19eaa5b00b71226aa3642d
     </nav>
 
     <div class="icons">
@@ -30,7 +29,7 @@
     <div class="info">
         <i class="fas fa-phone"></i>
         <h3 class="fw-bold">Phone Number</h3>
-        <p>08121035085</p>
+        <p>08121035085 <br> 081381446454</p>
     </div>
 
     <div class="info">

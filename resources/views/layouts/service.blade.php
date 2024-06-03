@@ -5,7 +5,9 @@
             <div class="col-4">
                 <i class="fas fa-phone icon"></i>
                 <h4 class="fw-bold">Phone Number</h4>
-                <p>08121035085</p>
+                <p>08121035085<br>
+                    081381446454
+                </p>
             </div>
             <div class="col-4">
                 <i class="fas fa-envelope icon"></i>
