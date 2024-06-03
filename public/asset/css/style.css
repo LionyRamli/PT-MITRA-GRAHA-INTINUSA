@@ -752,8 +752,23 @@ span {
 .company-description .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.company-image {
+  flex: 0 0 auto;
+  margin-right: 70px;
+}
+
+.company-image img {
+  max-width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+  height: auto; /* Tinggi gambar akan menyesuaikan proporsi aslinya */
+  max-height: 500px; /* Atur tinggi maksimum gambar sesuai kebutuhan */
+}
+
+.description {
+  flex: 1;
 }
 
 h2 {
@@ -763,16 +778,12 @@ h2 {
   font-weight: bold;
 }
 
-.description {
+.description p {
+  margin-bottom: 20px;
   font-size: 1.35rem;
   line-height: 1.6;
   color: #666;
 }
-
-.description p {
-  margin-bottom: 20px;
-}
-
 
 
 
