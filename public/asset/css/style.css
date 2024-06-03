@@ -339,40 +339,71 @@ h3 {
 }
 
 .about {
+  text-align: center; /* Memusatkan heading */
+  
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold; /* Menambahkan bold ke heading */
+    text-align: center; /* Memusatkan heading */
+  }
+
   .row {
     display: flex;
-    align-items: center;
+    justify-content: space-around; /* Menyebarkan kolom di sepanjang baris */
     flex-wrap: wrap;
     gap: 3rem;
     margin-top: 45px;
+  }
 
-    .photo {
-      flex: 1 1 30%; /* Mengatur lebar foto menjadi 30% dari lebar container */
-      max-width: 50rem; /* Tetapkan lebar maksimum agar foto tidak terlalu melebar */
-    }
+  .column {
+    flex: 1 1 45%; /* Lebar kolom fleksibel dengan minimum 45% */
+    max-width: 45%; /* Lebar maksimum kolom */
+    text-align: center; /* Memusatkan teks di dalam kolom */
+  }
 
-    .photo img {
-      width: 100%;
-      height: auto; /* Mengatur tinggi foto agar proporsional */
-      display: block; /* Menghilangkan margin bawah pada gambar */
-    }
+  .photo {
+    margin-bottom: 1rem; /* Margin bawah untuk foto */
+    position: relative;
+    overflow: hidden; /* Memastikan elemen anak tidak melampaui batas kontainer */
+    border-radius: 50%; /* Membuat foto berbentuk lingkaran */
+    width: 250px; /* Lebar tetap untuk foto */
+    height: 250px; /* Tinggi tetap untuk foto */
+    margin: 0 auto; /* Memusatkan foto dalam kolom */
+  }
 
-    .content {
-      flex: 1 1 41rem;
-    }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar menyesuaikan kontainer dengan proporsional */
+    display: block; /* Menghilangkan margin bawah pada gambar */
+    transition: transform 0.5s ease; /* Menambahkan efek transisi pada hover */
+  }
 
-    .content h3 {
-      font-size: 3.5rem; /* Ukuran font untuk judul */
-      /* Gaya tambahan untuk judul */
-    }
+  .photo:hover img {
+    transform: scale(1.1); /* Memperbesar gambar saat hover */
+  }
 
-    .content p {
-      font-size: 1.45rem;
-      padding: 1rem 0; /* Ukuran font untuk paragraf */
-      line-height: 1.5;
-      text-align: justify; /* Menambahkan line height pada paragraf */
-      /* Gaya tambahan untuk paragraf */
-    }
+  .content {
+    text-align: center; /* Memusatkan teks */
+  }
+
+  .content h3 {
+    font-size: 3.5rem; /* Ukuran font untuk judul */
+    font-weight: bold; /* Menambahkan bold ke judul */
+    margin-bottom: 1rem; /* Margin bawah untuk judul */
+  }
+
+  .content p {
+    font-size: 1.35rem;
+    padding: 1rem 0; /* Ukuran font untuk paragraf */
+    line-height: 1.5;
+    text-align: center; /* Menambahkan line height pada paragraf */
+    margin-bottom: 1rem; /* Margin bawah untuk paragraf */
+  }
+
+  .content a.btn {
+    display: inline-block; /* Agar tombol berada dalam garis dan berbentuk blok */
   }
 }
 
@@ -712,6 +743,36 @@ span {
 }
 
 
+/* Frame 4 */
+.company-description {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.company-description .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.description p {
+  margin-bottom: 20px;
+}
+
 
 
 
@@ -776,6 +837,14 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about .row {
+  flex-direction: column;
+}
+
+.about .column {
+  max-width: 100%;
 }
 
 .menu-card {

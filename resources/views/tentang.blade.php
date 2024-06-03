@@ -22,21 +22,13 @@
     @include('layouts.navbar')
     {{-- End Header --}}
 
-    {{-- Carousel --}}
-    @include('layouts.carousel')
-    {{-- End Carousel --}}
+    {{-- Profile --}}
+    @include('layouts.profile')
+    {{-- End Profile --}}
 
-    {{-- Fitur --}}
-    @include('layouts.fitur')
-    {{-- End Fitur --}}
-
-    {{-- Video --}}
-    @include('layouts.video')
-    {{-- End Video --}}
-
-    {{-- Product --}}
-    @include('layouts.produk')
-    {{-- End Product --}}
+    {{-- About --}}
+    @include('layouts.about')
+    {{-- End About --}}
 
     {{-- Footert --}}
     @include('layouts.footer')

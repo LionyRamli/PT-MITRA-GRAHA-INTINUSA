@@ -28,3 +28,7 @@ Route::get('/product', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 })->name('kontak');
+
+Route::get('/tentang', function () {
+    return view('tentang');
+})->name('tentang');

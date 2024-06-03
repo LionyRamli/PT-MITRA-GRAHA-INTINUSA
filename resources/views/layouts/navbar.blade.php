@@ -5,6 +5,7 @@
         <a href="{{ route('home') }}" onclick="loadPage('{{ route('home') }}', 'content')">Home</a>
         <a href="{{ route('product') }}" onclick="loadPage('{{ route('product') }}', 'content')">Product</a>
         <a href="{{ route('kontak') }}" onclick="loadPage('{{ route('kontak') }}', 'content')" >Kontak</a>
+        <a href="{{ route('tentang') }}" onclick="loadPage('{{ route('tentang') }}', 'content')">Tentang</a>
     </nav>
 
     <div class="icons">
@@ -26,7 +27,7 @@
     <div class="info">
         <i class="fas fa-phone"></i>
         <h3 class="fw-bold">Phone Number</h3>
-        <p>08121035085</p>
+        <p>08121035085 <br> 081381446454</p>
     </div>
 
     <div class="info">
