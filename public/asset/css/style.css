@@ -865,6 +865,16 @@ h2 {
   max-width: 100%;
 }
 
+.company-description .container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.company-description .company-image {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
 .menu-card {
   margin-top: 2rem; /* Atur margin atas antar menu-card */
 }
