@@ -1,16 +1,16 @@
 <section class="company-description">
     <div class="container">
-      <div class="company-image">
-        <img src="asset/img/Sertifikat.jpg" alt="Company Image">
-      </div>
-      <div class="description">
-        <h2>About Us</h2>
-        <p>
-          We are a leading technology company dedicated to innovation and excellence. Our mission is to empower individuals and businesses through cutting-edge solutions and exceptional customer service. With a team of passionate professionals, we strive to create a positive impact on society and drive meaningful change in the world.
-        </p>
-        <p>
-          At our core, we value integrity, collaboration, and continuous improvement. We believe in fostering a culture of creativity and inclusivity, where everyone has the opportunity to thrive and succeed. With a commitment to sustainability and social responsibility, we aim to build a brighter future for generations to come.
-        </p>
-      </div>
+        <div class="company-image">
+            <img src="asset/img/Sertifikat.jpg" alt="Gambar Perusahaan">
+        </div>
+        <div class="description">
+            <h2>Tentang Kami</h2>
+            <p>
+                Kami adalah perusahaan teknologi terkemuka yang berdedikasi untuk inovasi dan keunggulan. Misi kami adalah memberdayakan individu dan bisnis melalui solusi-solusi terkini dan pelayanan pelanggan yang luar biasa. Dengan tim profesional yang penuh semangat, kami berusaha untuk menciptakan dampak positif bagi masyarakat dan mendorong perubahan yang bermakna di dunia.
+            </p>
+            <p>
+                Pada intinya, kami menghargai integritas, kolaborasi, dan peningkatan yang berkelanjutan. Kami percaya dalam membina budaya kreativitas dan inklusivitas, di mana setiap orang memiliki kesempatan untuk berkembang dan berhasil. Dengan komitmen terhadap keberlanjutan dan tanggung jawab sosial, kami bertujuan untuk membangun masa depan yang lebih cerah bagi generasi mendatang.
+            </p>
+        </div>
     </div>
-  </section>
+</section>
